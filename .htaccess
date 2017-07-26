@@ -8,4 +8,8 @@ RewriteRule . /index.php [L]
 
 </IfModule>
 Options -Indexes
-
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+allow from 123.123.123.123
+</Files>
